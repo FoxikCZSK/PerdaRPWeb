@@ -1,1 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perda RP</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vítejte na stránce Perda RP</h1>
+    </header>
+   
 
+
+    <div class="main">
+        <img src="Perda_rp_logo.png" alt="PerdaLogo" class="PerdaLogo">
+        <p class="text1">Fivem Roleplay Server Perda RP</p>
+        <p class="text2">Some description or welcoming text here. Feel free to customize this.</p>
+        <p class="text3">Another text placeholder for more information or an announcement.</p>  
+        
+        <div class="social-buttons">
+            <a href="https://discord.gg/KYAegS6peq" class="button discord">Discord</a>
+            <a href="https://www.twitch.tv/perda_twitch" class="button twitch">Twitch</a>
+            <a href="https://www.youtube.com/@Perda4638" class="button youtube">YouTube</a>
+            <a href="https://cfx.re/join/qm8l5p" class="button instagram">join</a>
+            <a href="Unknow_yet_<insert>" class="button rules">Pravidla</a>
+        </div>
+    </div>
+  
+     <div class="shapes-container">
+        <!-- 40 random shapes will be generated here by JavaScript -->
+    </div>
+    <script>
+        const shapesContainer = document.querySelector('.shapes-container');
+
+        function createRandomShape() {
+            const shape = document.createElement('div');
+            shape.classList.add('shape');
+
+            // Randomize shape type
+            const shapeTypes = ['circle', 'square', 'triangle'];
+            const randomShapeType = shapeTypes[Math.floor(Math.random() * shapeTypes.length)];
+            shape.classList.add(randomShapeType);
+
+            // Randomize position
+            shape.style.top = Math.random() * 100 + 'vh';
+            shape.style.left = Math.random() * 100 + 'vw';
+
+            // Randomize size
+            const size = Math.random() * 100 + 20; // Size between 20px and 120px
+            shape.style.width = `${size}px`;
+            shape.style.height = `${size}px`;
+
+            // Randomize orange shades
+            const orangeShades = ['#FFA500', '#FF8C00', '#FF7F50', '#FF6347', '#FF4500', '#FF6A00'];
+            const randomColor = orangeShades[Math.floor(Math.random() * orangeShades.length)];
+            shape.style.backgroundColor = randomColor;
+
+            // Randomize animation duration
+            const duration = Math.random() * 10 + 10; // Between 10s and 20s
+            shape.style.animationDuration = `${duration}s`;
+
+            return shape;
+        }
+
+        for (let i = 0; i < 30; i++) {
+            const shape = createRandomShape();
+            shapesContainer.appendChild(shape);
+        }
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Perda RP</p>
+        <p>Made by Foxik CZ</p>
+    </footer>
+</body>
+</html>

@@ -88,3 +88,40 @@ p {
     background-color: #ff6347; /* Discord blue */
     transition: padding 0.3 ease;
 }
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* You can set a max width to keep it centered */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-item {
+  flex: 1 1 auto;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+}

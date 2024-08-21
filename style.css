@@ -244,4 +244,43 @@ header, .main, footer {
 .PerdaLogo:hover {
   border-color: #ff6347;
   box-shadow: 0 12px 24px rgba(255, 69, 0, 0.6), 0 8px 8px rgba(255, 140, 0, 0.4); /* Lighter shade of orange */
-}/*# sourceMappingURL=style.css.map */
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px; /* You can set a max width to keep it centered */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.nav-item {
+  flex: 1 1 auto;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,312 +1,127 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fivem Pravidla</title>
-    <link rel="stylesheet" href="styler.css">
-</head>
-<body>
+body {
+    background-color: rgb(6,22,36);
+    color: rgb(210,225,228);
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-    <header><h1>Pravidla Roleplaye na serveru PerdaRP</h1> <a href="index.html" class="button home">Zpět na hlavní stránku</a></header>
+header {
+    text-align: center;
+    padding: 2% 0;
+    background-color: rgb(12, 42, 68); /* Bright orange */
+    border-bottom: 3px solid rgb(211,225,229);
+    width: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    z-index: 10; /* Ensure header is above the shapes */
+    position: relative; /* For z-index to work */
+}
+
+h1, h2 {
+    color: rgb(211,225,229);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    color: rgb(172, 184, 187);
+}
+
+.text2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px; /* Increased font size for better visibility */
+    font-weight: 400;
+    margin: 15px 0;
+    color: rgb(211,225,229); /* Bright orange-red for high visibility */
+    line-height: 40px;
+    letter-spacing: 1px; /* Increased letter spacing for better readability */
+    animation: slideIn 2s ease-in-out;
+    padding-left: 10px; /* Padding to separate text from border */
+}
+
+.nadp {
+font-size: 1.3em;
+}
+
+.podp {
+font-size: 1em;
+}
+
+section {
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+p {
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: #ecf0f1;
+}
+
+.button {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff; /* White text */
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
     
-        <div class="text2">
-            <h3><li class="nadp">ROLE PLAY (RP)</h3>
 
-            <li class="podp"> Hraní za vymyšlenou postavu ve vymyšleném světě na základě pravidel RP
-            
-            <h3><li class="nadp">/ME</h3>
-            
-            <li class="podp"> Nahrazuje animaci
-            
-                <li class="podp"> např. /me vytahuje zapalovač a zapaluje si cigaretu 
-            
-                    <li class="podp"> Pokud se dá použít animace není potřeba psát /me
+    &:hover {
+        background-color: rgba(30, 255, 0, 0.5); /* White with 10% opacity */
+        box-shadow: white 2px;
+    }
+}
 
-                        <li class="podp"> Nepoužívejte např. /me mluví: Nechci práci.
-            
-            <h3><li class="nadp">/DO</h3>
-            
-            <li class="podp"> Slouží k popisu vykonání činnosti s očekáváním reakce 
-            
-                <li class="podp"> např. /me prohledává auto /do co našel?  druhý hráč /do našel batoh se zbraněmi 
-            
-                    <li class="podp"> Do /do se nesmí lhát 
-            
-            <h3><li class="nadp">/STAV</h3> 
-            
-            <li class="podp"> Slouží k popsání toho co se stalo hráči 
-            
-                <li class="podp"> např. /stav MK2 na popruhu, /stav má ruku v sádře 
-            
-            <h3><li class="nadp">/TRY </h3>
-            
-            <li class="podp"> Slouží k náhodnému vygenerování ANO nebo NE 
-                
-                <li class="podp"> Používejte když nevíte nebo chcete náhodně rozhodnout třeba /do má prostřelené rameno? | /try (ano/ne)
-            
-            <h3><li class="nadp">IN CHARAKTER (IC)</h3>
-            
-            <li class="podp"> Vše co se stalo a a stane při RP vaší postavy 
-            
-                <li class="podp">  Všechny informace co jste se dozvěděli ve hře o kterých by postava měla vědět 
-            
-            <h3><li class="nadp">OUT OF CHARAKTER (OOC)</h3>
-            
-            <li class="podp"> Komunikace mimo RP, mimo vaší postavu 
-            
-                <li class="podp"> Do toho se počítá lokální chat 
+.home {
+    background-color: rgb(6,22,36); /* Discord blue */
+    transition: padding 0.3 ease;
+}
 
-                    <li class="podp"> Z OOC neberte spory mezi postavami do IC - Pravidlo Metagamingu 
-            
-            <h3><li class="nadp">MIXING</h3> 
-            
-            <li class="podp"> Míchání OOC věcí do IC a naopak 
-            
-                <li class="podp"> např. někomu do voicu říct: Počkej přišla máma.
-            
-                    <li class="podp"> Informace z IC nesmíte sdělit OOC někomu, kdo o nich neví 
-            
-            <h3><li class="nadp">TROLLING</h3>
-            
-            <li class="podp"> Všeobecné porušování pravidel serveru 
-            
-                <li class="podp"> Je zakázáno provokovat hráče v LOOC k úmyslnému vyvolání OOC hádky 
-            
-                    <li class="podp"> Je zakázáno hrát zámněrně na hraně pravidel a zneužívání děr v pravidlech
-            
-            <h3><li class="nadp">METAGAMING</h3> 
-            
-            <li class="podp"> Cokoliv, co se dozvíš mimo RP a použiješ to ve hře se bere jako Metagaming 
-            
-                <li class="podp"> např. Koukáš na streamera a tam uvidíš že plánuje zaútočit na někoho koho ve hře znáš. Tvá postava to neví! Tím pádem ho nesmíš nijak upozornit pokud se to zjistí bude následovat trest
-            
-            <h3><li class="nadp">LOOTING</h3> 
-            
-            <li class="podp"> Bezdůvodné okrádání / vylootění hráče, anižby s ním měli nějakou interakci 
-            
-                <li class="podp"> Nezačnete jen tak lootit hráče, který leží uprostřed silnice
-            
-                    <li class="podp"> Je zakázáno vylootit státní složky (LSPD, LSSD, EMS, FD)
-            
-            <h3><li class="nadp">POWERGAMING</h3>
-            
-            <li class="podp"> Provádění nereálných činností například : Zvednout auto nad hlavu a hodit ho do vesmíru. 
-            
-            <h3><li class="nadp">NVL (NOT VALUING YOUR LIFE)</h3>
-            
-            <li class="podp"> Nevážení si života své postavy 
-            
-                <li class="podp"> např. jízda/chůze po kolejích, pobíhání u požáru/ přestřelky
-            
-            <h3><li class="nadp">COMBAT LOG </h3>
-            
-            <li class="podp"> Odpojení během jakékoliv RP akce za účelem se vyhnout trestu či přestřelce
-            
-                <li class="podp"> Nemůžete se odpojit, protože se chcete vyléčit 
-            
-                    <li class="podp"> Nemůžete se odpojit z RP akce, protože musíte jít spát (akci doeRpite nebo se něják IC domluvíte třeba pokud jste v CPZ)
-            
-            <h3><li class="nadp">COMBAT COMEBACK </h3>
-            
-            <li class="podp"> Je zakázáno se vrátit do předešlé RP akce po PK a převezení do nemocnice
-            
-            <h3><li class="nadp"> Non RP Dirving</h3>
+.container {
+  width: 100%;
+  max-width: 1200px; /* You can set a max width to keep it centered */
+  margin: 0 auto;
+  padding: 20px;
+}
 
-                <li class="podp"> Je zakázáno jezdit nereálným způsobem např. nesmíte jezdit vozidlem s nízkým podvozkem po horách 
+img {
+  max-width: 100%;
+  height: auto;
+}
 
-            <h3><li class="nadp"> VIN KOD </h3>
-            
-            <li class="podp"> VIN kod má každe auto unikátní - nemají ho místní (npc) nebo si ho můžete z vozidla sundat
-            
-            <h3><li class="nadp">VK (VEHICLE KILL)</h3>
-            
-            <li class="podp"> Poškození vozidla tak že nemůže být znovu opraveno
-            
-                <li class="podp"> např. Vozidlo vybouchne, shoří nebo je utopeno
-            
-            <h3><li class="nadp">FEAR</h3>
-            
-            <li class="podp"> Je RPení strachu při útěku nebo když na vás někdo míří zbraní 
-            
-                <li class="podp"> Je nutnost se starat o svou postavu, jako kdyby jste to byli vy ať už se jedná o jídlo a pití nebo o své bezpečí 
-            
-                    <li class="podp"> Hráč je povinen hrát strach a bát se o svůj život či o svou rodinu při vyhrožování
-            
-                        <li class="podp"> JAIL FEAR - Hráč je povinný hrát strach a bát se o svlůj život, že může skončit ve vězení 
-            
-                            <li class="podp"> COP FEAR - Povinnost RPit obavu z PD i když jste nelegální organizace 
-            
-                                <li class="podp"> GUN FEAR - Hráč se můsí bát když na něj někdo míří, nebo i když ji třeba jen drží se zájmem na něj zaůtočit
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-                                    <li class="podp"> DOG FEAR - Hráč by měl mít strach z větších psů z toho, že mu mohou něco udělat
+.nav-item {
+  flex: 1 1 auto;
+  margin: 5px;
+}
 
-                                        <li class="podp"> JOB FEAR - Hráč se musí bát o to, že může dostat vyhazov z práce, např. za špatné hování atd.
-            
-            <h3><li class="nadp">TRASH</h3> 
-            
-            <li class="podp"> Jakékoliv zbytečné vyvolávání přestřelek, ramování, vytahovnání zbraní atd...
-            
-            <h3><li class="nadp">ADVERTISING</h3>
-            
-            <li class="podp"> Zákaz propagace jiných serverů / zákaz propagace jiných socialních sítí (vyjímky - Youtubeři, tiktokeři, streameři)
-            
-                <li class="podp"> SIGNÁL PRVNÍ POMOCI 
-            
-                    <li class="podp"> Používá se, když jste umřeli v civilizaci kde je možnost že vám někdo zavolal pomoc
-            
-            <h3><li class="nadp">PEACE TIME (PT)</h3>
-            
-            <li class="podp"> Standardní peace time na serveru neni 
-            
-                <li class="podp"> Při této chvíli je zakázáno dělat jakoukoliv nelegální činnost
-            
-                    <li class="podp"> Peace time je pouze pokud jej vyhlásí člen A-teamu
-            
-            <h3><li class="nadp"> COP BAITING</h3>
-            
-            <li class="podp"> Zákaz provokování státních složek
-            
-            <h3><li class="nadp">PASSIVE RP</h3> 
-            
-            <li class="podp"> RPí se několika milionové město 
-            
-                <li class="podp">  Bereme na vědomí, že nejste někde sami a že je s vámi na místě více lidí 
-            
-                    <li class="podp"> PassiveRP platí třeba na : PD stanici, EMS, Sheriff stanici, PDM, Hlavní garáže atd...
-            
-                        <li class="podp"> Hoody najsou PassivRP nijak ovlivněny, zde platí FractionRP a hlavně FearRP 
-            
-            <h3><li class="nadp">VEHICLE DEATHMATCH (VDM)</h3>
-            
-                <li class="podp"> Bezdůvodné bourání do aut 
-            
-                    <li class="podp"> Taktéž masivní zabijení lidí pomocí auta. Auto není zbraň ale dopravné prostředek 
-            
-            <h3><li class="nadp">RANDOM DEATHMATCH (RDM)</h3>
-            
-            <li class="podp"> Náhodné masivní zabijení bez jakékoliv RP důvodu
-            
-            <h3><li class="nadp">KILL ON SIGHT (KOS)</h3>
-            
-            <li class="podp"> Zabíjení na první pohled a bez důvodu
-            
-                <li class="podp"> Při zabíjení někoho musíš mít patřičný důvod 
-            
-            <h3><li class="nadp">PLAYER KILL (PK)</h3>
-            
-            <li class="podp"> Stav kdy jste v DeadScreenu, objeví se odpočet do respawnu
-            
-                <li class="podp"> PK BEZ ZTRÁTY PAMĚTI - PK je když je postava ve stavu bezvědomí při střelení a podobně 
-            
-                    <li class="podp"> Nezpůsobí otřes mozku/ poškození hlavy
-            
-                        <li class="podp"> PK SE ZTRÁTOU PAMĚNI - Ztrátu paměti ti způsobí, když dostaneš tvrdým prědmětem po hlavě 
-            
-                            <li class="podp"> Hráč, který má ztrátu paměni si nepamatuje celou RP akci 
-            
-                                <li class="podp"> Hráč si matně vzpomíná po 24 hodinách od ztráty paměni
-            
-                                    <li class="podp"> Když je člověk ve stavu bezvědomí, znamená to že si nepamatuje nic co se okolo něho děje nebo hovoří 
-            
-            <h3><li class="nadp">CHARAKTER KILL (CK)</h3>
-            
-            <li class="podp"> Zabití postavy nastálo (smazání charakteru)
-            
-                <li class="podp"> CK si každý hráč schvyluje sám a tedy neni možnost si napsat o CK na jiného hráče v ticketu 
-            
-                    <li class="podp"> Při únosu, vykrádačne a dalších nelegalních aktivitách nadále platí pravidlo NVL a FearRP 
-            
-                        <li class="podp"> Hráč se po CK nemůže vrátit do stejné frakce/ sklupiny do 14 dní 
-            
-                            <li class="podp"> Když se rozhodnete opustit nelegalní frakci, i tak na vás platí frakční CK po dobu 14 dnů
-            
-                                <li class="podp"> JAIL CK - 70 a více let
-            
-            <h3><li class="nadp">GROSS RP ( NECHUTNÝ ROLEPLAY)</h3>
-            
-            <li class="podp"> Musí s tím souhlasit všichni členi RP akce
-            
-                <li class="podp"> Je povoleno uříznout malé části těla ( ucho, prsta podobně) 
-            
-                    <li class="podp"> Hráč nesmí RPit trvalé následky jako např. odřezaná ruka (pri CK je to možné RPit)
-            
-                        <li class="podp"> Do Gross RP se řadí například : Mučení, Znásilnění, Pedofilie, Kanibalismus, Sexualní obtěžování 
-            
-                            <li class="podp"> N-WORDY JSOU NA SERVERU TRESTÁNY BANEM 
-            
-            <h3><li class="nadp">FRAKČNÍ PRAVIDLA</h3> 
-            
-            <li class="podp"> Hráč, který se rozhodne ukončit svou činnost např. u PD  a nastoupit třeba k nějaké nelegálce nebo dělat nějaké nelegální činnosti musí počkat 7 dní 
-            
-                <li class="podp"> Je zakázáno svou frakci prodávat 
-            
-                    <li class="podp">  Je zakázáno nutit majitele frakce, aby vám vydal peníze z vlastní frakce/ nabral vás do dané frakce 
-            
-                        <li class="podp"> PRAVIDLA PRO NELEGALNÍ FRAKCE 
-            
-                            <li class="podp"> Zákaz snitchovat nelegalku
-            
-                                <li class="podp"> Pokud chcete snitchovat tak si na to vytvoř ticket 
-            
-            <h3><li class="nadp">STÁTNÍ SLOŽKY</h3> 
-            
-            <li class="podp"> Hráč, nesmí na obouch charech být člen státní složky : Vyjímkou je na jednom charu RPit státní složku a na druhém peda státní složce
-            
-                <li class="podp"> Hráč, který není členem sboru nesmí nosit uniformu 
-            
-                    <li class="podp"> Zátah na frakce, budovy, podniky musí bát schvaleny přes ticket 
-                        
-                        <li class="podp"> Státní složky se berou LSPD, LSSD, EMS a FD
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
 
-            <h3><li class="nadp">PRAVIDLA ÚNOSU</h3> 
-            
-            <li class="podp"> Musíte mít vždy adekvátní důvod proč chcete danou osobu unést
-            
-                <li class="podp"> Zákaz vydírat člověka, aby na vás přepsal majetek 
-            
-                    <li class="podp"> Je zakázáno při okrádání vybírat nepíze z kreditní karty 
-            
-                        <li class="podp"> Je zakázáno unášet lidi do interiéru které jsou přes port 
-            
-                            <li class="podp"> Za jednoho rukojmího si můžete říct maximálně 1500 $
-            
-                                <li class="podp"> Je povolené držet uneseného maximálně 2 hodiny 
-            
-            <h3><li class="nadp">PRAVIDLA PRO STREAMERY</h3> 
-            
-            <li class="podp"> Každý streamer zodpovídá za svůj stream a souhlasí s možným rizikem streamsnipu nebo metagamingu
-            
-                <li class="podp"> Každý streamer je povinen dodržovat pravidla serveru Perda RP 
-            
-                    <li class="podp"> V případě porušení pravidel serveru či případě urážení serveru může být streamer potrestán 
-            
-                        <li class="podp"> V případě řešení věcí s A-Teamem je streamer povinen vypnout zvuk a obraz hry a mutnout mikrofon
-            
-            <h3><li class="nadp">ZÁKLADNÍ PRAVIDLA</h3> 
-            
-            <li class="podp"> Bugy se RPí jen pokud bug zasáhl do RP akce 
-            
-                <li class="podp"> Je zakázáno přetahovat majetek z jedné postavy na druhé a také je zakázáno RPit že jste zdědili majetek po své staré postavě 
-            
-                    <li class="podp"> Nesmí se RPit podle poznání hlasu 
-            
-                        <li class="podp"> Je zakázané používat jakékoliv programy k poškození/ ulehčení hry 
-            
-                            <li class="podp"> Majitel učtu zodpovídá za svůj účet
-            
-                                <li class="podp"> V případě AFK hráč odpovídá za svoji postavu, v případě kažení RP bude potrestán 
-            
-                                    <li class="podp"> Pokud máte s jakýmkoliv hráčem problém, napište to do ticketu a tam se to vyřeší 
-            
-                                        <li class="podp"> Jakékoliv střílení, rámování, mlácení na hlavních garážích se bude trestat dle uvážení admina 
-            
-                                            <li class="podp"> Vše co má hráč v inventáři má u sebe 
-            
-                                                <li class="podp"> Člen AT má finální slovo a platí vše, co řekne. Pokud s vyjádřením člena nebudete souhlasit, můžete se obrátit na vyšší hodnost nebo využít ticket 
-            
-                                                    <li class="podp"> AT není povinen odepisovat do soukromých zpráv 
-</div>
-</body>
-</html>
+  .navbar {
+    flex-direction: column;
+  }
+
+  .nav-item {
+    margin: 5px 0;
+  }
+}

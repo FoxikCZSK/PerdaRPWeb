@@ -1,5 +1,5 @@
 body {
-    background-color: #1a1a1a; /* Dark gray/black background */
+    background-color: rgb(6,22,36); /* Dark gray/black background */
     color: #ffffff; /* White text */
     margin: 0;
     font-family: 'Roboto', sans-serif; /* Body font */
@@ -15,8 +15,8 @@ body {
 header {
     text-align: center;
     padding: 2% 0;
-    background-color: #652800; /* Bright orange */
-    border-bottom: 3px solid #ff4500;
+    background-color: rgb(211,225,229); /* Bright orange */
+    border-bottom: 3px solid rgb(211,225,229);
     width: 100%;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     z-index: 10; /* Ensure header is above the shapes */
@@ -35,7 +35,7 @@ header {
 }
 
 .main {
-    background-color: #262626; /* Dark gray */
+    background-color: #061624;
     padding: 3% 5%;
     text-align: center;
     border-radius: 15px;
@@ -43,7 +43,7 @@ header {
     margin-top: 20px;
     width: 90%;
     max-width: 800px;
-    border: 3px solid #ff4500; /* Bright orange border */
+    border: 3px solid rgb(211,225,229); /* Bright orange border */
     position: relative;
     z-index: 10; /* Bring main content in front of shapes */
     animation: fadeInUp 1s ease-in-out;
@@ -66,7 +66,7 @@ header {
     font-style: normal;
     font-size: 32px; /* Increased font size for better visibility */
     margin: 20px 0 10px;
-    color: #ff4500; /* Bright orange for high visibility */
+    color: #ffffff; /* Bright orange for high visibility */
     text-transform: uppercase; /* Uppercase for emphasis */
     letter-spacing: 2px; /* Increased letter spacing for better readability */
     animation: fadeIn 2s ease-in-out;
@@ -86,11 +86,11 @@ header {
     font-size: 20px; /* Increased font size for better visibility */
     font-weight: 400;
     margin: 15px 0;
-    color: #ff6347; /* Bright orange-red for high visibility */
+    color: #dfdfdf; /* Bright orange-red for high visibility */
     line-height: 1.6; /* Improved line height for readability */
     letter-spacing: 1px; /* Increased letter spacing for better readability */
     animation: slideIn 2s ease-in-out;
-    border-left: 4px solid #ff4500; /* Added left border for emphasis */
+    border-left: 4px solid #dfdfdf; /* Added left border for emphasis */
     padding-left: 10px; /* Padding to separate text from border */
 
     @keyframes slideIn {
@@ -110,11 +110,11 @@ header {
     font-size: 18px; /* Increased font size for better visibility */
     font-weight: 400;
     margin: 15px 0; /* Consistent margin with text2 */
-    color: #ff6347; /* Same color for consistency */
+    color: #dfdfdf; /* Same color for consistency */
     line-height: 1.6; /* Improved line height for readability */
     letter-spacing: 1px; /* Increased letter spacing for better readability */
     animation: slideIn 2s ease-in-out;
-    border-left: 4px solid #ff4500; /* Added left border for emphasis */
+    border-left: 4px solid #dfdfdf; /* Added left border for emphasis */
     padding-left: 10px; /* Padding to separate text from border */
 
     @keyframes slideIn {
@@ -132,54 +132,54 @@ header {
 .button {
     padding: 10px 20px;
     text-decoration: none;
-    color: #ffffff; /* White text */
+    color: #ffffff; 
     border-radius: 5px;
     font-size: 16px;
     transition: background-color 0.3s ease;
     
 
     &:hover {
-        background-color: rgba(30, 255, 0, 0.5); /* White with 10% opacity */
+        background-color: rgba(30, 255, 0, 0.5); 
         box-shadow: white 2px;
     }
 }
 
 .discord {
-    background-color: #7289da95; /* Discord blue */
+    background-color: #7289da95; 
     transition: padding 0.3 ease;
 }
 
 .instagram {
-    background-color: #c1358495; /* Instagram pink */
+    background-color: #c1358495; 
     transition: padding 0.3 ease;
 }
 
 
 .twitch {
-    background-color: #6441a595; /* Twitch purple */
+    background-color: #6441a595;
     transition: padding 0.3 ease;
 }
 
 
 .youtube {
-    background-color: #ff000095; /* YouTube red */
+    background-color: #ff000095;
     transition: padding 0.3 ease;
 }
 
 .rules {
-    background-color: #002fff95; /* YouTube red */
+    background-color: #002fff95;
     transition: padding 0.3 ease;
 }
 
 footer {
-    background-color: #333333; /* Dark gray */
+    background-color: #061624; 
     padding: 20px 0;
     text-align: center;
     width: 100%;
     position: absolute;
     bottom: 0;
-    z-index: 10; /* Ensure footer is on top of shapes */
-    border-top: 3px solid #ff4500;
+    z-index: 10;
+    border-top: 3px solid #d3e1e5;
 }
 
 .shapes-container {
@@ -232,7 +232,7 @@ footer {
 
 header, .main, footer {
     clip-path: inset(0); /* Ensure shapes do not overlap the content */
-    background-color: #222; /* Use the background color of the body */
+    background-color: rgb(12, 42, 68); /* Use the background color of the body */
     padding: 20px;
     border-radius: 10px;
     color: #fff;
@@ -243,10 +243,10 @@ header, .main, footer {
     width: 150px;
     margin-bottom: 20px;
     border-radius: 50%;
-    border: 3px solid #ff4500;
+    border: 3px solid rgb(73,102,115);
     box-shadow: 
-        0 10px 20px rgba(255, 69, 0, 0.5),   /* Darker shade of orange */
-        0 6px 6px rgba(255, 140, 0, 0.3);    /* Lighter shade of orange */
+        0 10px 20px rgb(82,130,150),   /* Darker shade of orange */
+        0 6px 6px rgb(101,157,173);    /* Lighter shade of orange */
     animation: bounceIn 1.5s ease-in-out;
 
     @keyframes bounceIn {
@@ -259,10 +259,10 @@ header, .main, footer {
     }
 
     &:hover {
-        border-color: #ff6347;
+        border-color: rgb(73,102,115);
         box-shadow: 
-            0 12px 24px rgba(255, 69, 0, 0.6),   /* Darker shade of orange */
-            0 8px 8px rgba(255, 140, 0, 0.4);    /* Lighter shade of orange */
+            0 12px 24px rgb(82,130,150),   /* Darker shade of orange */
+            0 8px 8px rgb(101,157,173);    /* Lighter shade of orange */
     }
 }
 
